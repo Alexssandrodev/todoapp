@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>MyTasks</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h3>MyTasks</h3>
+      </div>
+      <div class="user">
+        <!-- <form action="" method="post">
+          <div class="input-search">
+            <input type="search" name="" id="search" placeholder="Buscar tarefa...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </form> -->
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="left">
+      <form action="" method="post" id="form-task">
+        <div class="input-form">
+          <input type="text" name="" id="todo" placeholder="Adicione sua tarefa">
+          <i title="Adicionar nova tarefa" class="fa-solid fa-plus"></i>
+        </div>
+      </form>
+
+      <div class="tasks">
+        <h1>Suas tarefas</h1>
+        <div class="box-tasks"></div>
+      </div>
+    </section>
+
+    <section class="rigth">
+      <div class="tasks">
+        <h1>Tarefas concluidas</h1>
+        <div id="completed" class="box-tasks"></div>
+      </div>
+    </section>
+  </main>
+  
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

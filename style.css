@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #180E0E;
+  --bg-box: #221515;
+  --text-color-white: #A7A7A7;
+  --color-green: #63FF72;
+  --color-red: #FF5353;
+}
+
+html {
+  font-size: 65.2%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-color-white);
+}
+
+header {
+  background-color: var(--bg-box);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 2%;
+}
+
+header .container .user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .container .user .input-search {
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  background-color: var(--text-color-white);
+  border-radius: 1rem;
+}
+
+header .container .user .input-search input {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: transparent;
+  color: #221515;
+}
+
+header .container .user .input-search i {
+  color: var(--bg-box);
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 130rem;
+  width: 100%;
+  margin: 4rem auto;
+  padding: 2rem 2%;
+}
+
+main section.left {
+  width: 48%;
+}
+
+main section.left form .input-form {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-box);
+  border-radius: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+}
+
+main section.left form .input-form i {
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main section.left form .input-form input {
+  flex: 1;
+  padding: 1.5rem;
+  background: transparent;
+  color: var(--text-color-white);
+}
+
+main section.rigth {
+  width: 48%;
+}
+
+main .tasks h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+main .tasks .box-tasks {
+  background-color: var(--bg-box);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+main .tasks .box-tasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: .1rem solid var(--text-color-white);
+  padding-bottom: .5rem;
+  margin-bottom: 2rem;
+}
+
+main .tasks .box-tasks .task i {
+  color: var(--color-green);
+  cursor: pointer;
+}
+
+main .tasks .box-tasks .task .delete {
+  color: var(--color-red);
+}
